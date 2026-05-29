@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>How Countries Became Developed</title>
 
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2961142311146537"
-     crossorigin="anonymous"></script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -34,6 +31,353 @@
       background: rgba(0,0,0,0.8);
       padding: 18px 8%;
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    nav h1 {
+      color: white;
+      font-size: 1.6rem;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #00b4d8;
+    }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+      url('https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=1470&auto=format&fit=crop') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .hero p {
+      max-width: 850px;
+      margin: auto;
+      font-size: 1.2rem;
+      margin-bottom: 35px;
+    }
+
+    .btn {
+      padding: 14px 35px;
+      background: #00b4d8;
+      border-radius: 30px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0077b6;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 90px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-title h2 {
+      font-size: 2.8rem;
+      color: #023e8a;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #555;
+    }
+
+    .country-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .country-card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: 0.4s ease;
+    }
+
+    .country-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .country-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .country-content {
+      padding: 25px;
+    }
+
+    .country-content h3 {
+      color: #0077b6;
+      margin-bottom: 12px;
+      font-size: 1.5rem;
+    }
+
+    .facts {
+      background: linear-gradient(to right, #023e8a, #0077b6);
+      color: white;
+    }
+
+    .fact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+
+    .fact-box h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #001d3d;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media(max-width: 768px) {
+      nav ul {
+        display: none;
+      }
+
+      .hero h2 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>World Development</h1>
+    <ul>
+      <li><a href="#countries">Countries</a></li>
+      <li><a href="#factors">Development Factors</a></li>
+      <li><a href="#facts">Global Facts</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="hero">
+      <div>
+        <h2>How Countries Became Developed</h2>
+        <p>
+          Discover how nations around the world transformed through education, technology, innovation, infrastructure, industry, and strong leadership.
+        </p>
+        <a href="#countries" class="btn">Explore Countries</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="countries">
+    <div class="section-title">
+      <h2>Countries That Achieved Development</h2>
+      <p>Learn how different nations built strong economies and modern societies.</p>
+    </div>
+
+    <div class="country-grid">
+
+      <div class="country-card">
+        <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=1470&auto=format&fit=crop" alt="USA">
+        <div class="country-content">
+          <h3>United States</h3>
+          <p>
+            The United States became developed through industrialization, innovation, technology, strong infrastructure, and global trade.
+          </p>
+        </div>
+      </div>
+
+      <div class="country-card">
+        <img src="https://images.unsplash.com/photo-1492571350019-22de08371fd3?q=80&w=1470&auto=format&fit=crop" alt="Japan">
+        <div class="country-content">
+          <h3>Japan</h3>
+          <p>
+            Japan rebuilt its economy after World War II using technology, manufacturing excellence, education, and discipline.
+          </p>
+        </div>
+      </div>
+
+      <div class="country-card">
+        <img src="https://images.unsplash.com/photo-1526481280695-3c4691f22d96?q=80&w=1470&auto=format&fit=crop" alt="Germany">
+        <div class="country-content">
+          <h3>Germany</h3>
+          <p>
+            Germany developed through engineering, industrial production, vocational education, and economic reforms.
+          </p>
+        </div>
+      </div>
+
+      <div class="country-card">
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1470&auto=format&fit=crop" alt="Singapore">
+        <div class="country-content">
+          <h3>Singapore</h3>
+          <p>
+            Singapore transformed from a small island into a global financial hub through leadership, clean governance, and trade.
+          </p>
+        </div>
+      </div>
+
+      <div class="country-card">
+        <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=1470&auto=format&fit=crop" alt="South Korea">
+        <div class="country-content">
+          <h3>South Korea</h3>
+          <p>
+            South Korea focused on technology, electronics, exports, and education to become one of Asia’s strongest economies.
+          </p>
+        </div>
+      </div>
+
+      <div class="country-card">
+        <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=1470&auto=format&fit=crop" alt="China">
+        <div class="country-content">
+          <h3>China</h3>
+          <p>
+            China experienced rapid development through manufacturing, infrastructure expansion, industrial reforms, and global trade.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="factors" style="background:#edf6f9;">
+    <div class="section-title">
+      <h2>Main Factors Behind Development</h2>
+      <p>The common elements found in many successful countries.</p>
+    </div>
+
+    <div class="country-grid">
+
+      <div class="country-card">
+        <div class="country-content">
+          <h3>Education</h3>
+          <p>
+            Strong education systems prepare citizens with skills needed for innovation and economic growth.
+          </p>
+        </div>
+      </div>
+
+      <div class="country-card">
+        <div class="country-content">
+          <h3>Technology</h3>
+          <p>
+            Advanced technology increases productivity, communication, and industrial efficiency.
+          </p>
+        </div>
+      </div>
+
+      <div class="country-card">
+        <div class="country-content">
+          <h3>Infrastructure</h3>
+          <p>
+            Roads, railways, internet systems, and electricity support national growth and trade.
+          </p>
+        </div>
+      </div>
+
+      <div class="country-card">
+        <div class="country-content">
+          <h3>Good Governance</h3>
+          <p>
+            Stable leadership and strong institutions create confidence for businesses and investors.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="facts" id="facts">
+    <div class="section-title">
+      <h2 style="color:white;">Global Development Facts</h2>
+      <p style="color:#ddd;">Interesting statistics about developed nations.</p>
+    </div>
+
+    <div class="fact-grid">
+      <div class="fact-box">
+        <h2>190+</h2>
+        <p>Countries Worldwide</p>
+      </div>
+
+      <div class="fact-box">
+        <h2>High</h2>
+        <p>Living Standards in Developed Nations</p>
+      </div>
+
+      <div class="fact-box">
+        <h2>Modern</h2>
+        <p>Technology and Innovation Systems</p>
+      </div>
+
+      <div class="fact-box">
+        <h2>Global</h2>
+        <p>Economic Connectivity</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Global Development Website | Designed for Education and Inspiration</p>
+  </footer>
+
+</body>
+</html>
       justify-content: space-between;
       align-items: center;
       z-index: 1000;
