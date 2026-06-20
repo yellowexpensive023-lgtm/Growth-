@@ -1,0 +1,17 @@
+{
+  "name": "growth",
+  "version": "1.0.0",
+  "description": "How Countries Became Developed - Educational Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["education", "development", "countries"],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.34.1",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
